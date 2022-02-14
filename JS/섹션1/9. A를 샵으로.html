@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer = "";
+        answer = s.replace(/A/g, "#");
+        return answer;
+      }
+
+      let str = "BANANA";
+      console.log(solution(str));
+
+      /*
+      ECMA-262 12th(2021) 스펙을 기준으로 replaceAll() 기능이 추가되었다 -> 최신 개발 환경이 아니라면 사용이 어려움
+      따라서 특정 문자열을 모두 바꾸기 위해선 replace + 정규표현식을 사용한다
+      */
+    </script>
+  </body>
+</html>

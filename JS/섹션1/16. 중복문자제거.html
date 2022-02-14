@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer = "";
+        for (let i = 0; i < s.length; i++) {
+          if (s.indexOf(s[i]) === i) {
+            answer += s[i];
+          }
+        }
+        return answer;
+      }
+      console.log(solution("ksekkset"));
+
+      /*
+        indexOf("a", idx) : idx 인덱스 이후로 a가 나오는 인덱스 반환 (idx 생략 시 0 인덱스부터 탐색)
+      */
+    </script>
+  </body>
+</html>
